@@ -38,8 +38,10 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            WidgetA(stream.less),
-            WidgetB(add:stream.add),
+            WidgetA(),
+            WidgetB(),
+            // WidgetA(stream.less),
+            // WidgetB(add: stream.add),
             StreamBuilder(
               stream: stream.outputStream,
               builder: (BuildContext context, AsyncSnapshot snapshot) {

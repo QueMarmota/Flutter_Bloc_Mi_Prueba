@@ -2,6 +2,17 @@ import 'dart:convert';
 import 'dart:async';
 
 class MiBloc {
+
+  static final MiBloc _instancia = new MiBloc._internal();
+
+  factory MiBloc(){
+    return _instancia;
+  }
+
+  MiBloc._internal();
+
+
+
   final StreamController<int> _streamController =
       StreamController<int>.broadcast();
 
